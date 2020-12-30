@@ -40,8 +40,8 @@
         热议主题
     </div>
     <ul class="list-group" style="width: 100%">
-        <c:forEach items="${hotestTopics}" var="hotestTopic">
-            <li class="list-group-item"><a href="/t/${hotestTopic.id}">${hotestTopic.title}</a></li>
+        <c:forEach items="${hotestArticles}" var="hotestArticle">
+            <li class="list-group-item"><a href="/t/${hotestArticle.id}">${hotestArticle.title}</a></li>
         </c:forEach>
     </ul>
 </div>

@@ -20,7 +20,7 @@
         </div>
 
         <div class="panel-body">
-            <form action="/topic/add" method="post" id="replyForm">
+            <form action="/article/add" method="post" id="replyForm">
                 <div class="form-group">
                     <label for="title">主题标题</label>
                     <input type="text" class="form-control" id="title" name="title" placeholder="请输入主题标题，如果标题能够表达完整内容，则正文可以为空" required="required">

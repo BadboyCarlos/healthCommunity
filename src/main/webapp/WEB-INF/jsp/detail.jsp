@@ -8,7 +8,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <script src="/js/jquery-3.2.1.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <title>${topic.title} - Genesis </title>
+    <title>${article.title} - Genesis </title>
 </head>
 <body>
 <!-- 引入header文件 -->
@@ -20,22 +20,22 @@
             <div class="panel-heading" style="background-color: white">
                 <a href="/">Genesis</a> › 主题
             </div>
-            <h3>${topic.title}</h3><br/>
+            <h3>${article.title}</h3><br/>
             <div>
-                <a href="/member/${topic.user.username}"><span ><strong>${topic.user.username}</strong></span></a>&nbsp;&nbsp;
-                <small class="text-muted">${topic.localCreateTime}&nbsp;&nbsp;&nbsp;+08:00</small>&nbsp;&nbsp;
-                <small class="text-muted">${topic.click}次点击</small>
+                <a href="/member/${article.user.username}"><span ><strong>${article.user.username}</strong></span></a>&nbsp;&nbsp;
+                <small class="text-muted">${article.localCreateTime}&nbsp;&nbsp;&nbsp;+08:00</small>&nbsp;&nbsp;
+                <small class="text-muted">${article.click}次点击</small>
             </div>
         </div>
 
         <div style="float: right;margin-top: -100px" >
-            <img width="50px" height="50px" src="${topic.user.avatar}" class="img-rounded">
+            <img width="50px" height="50px" src="${article.user.avatar}" class="img-rounded">
         </div>
     </div>
 
     <ul class="list-group" style="width: 100%">
             <li class="list-group-item">
-                ${topic.content}
+                ${article.content}
             </li>
     </ul>
 </div>
@@ -86,7 +86,7 @@
     <div class="panel-body">
         <div class="form-group">
             <form action="/reply/add" method="post">
-                <input type="hidden" name="topicId" value="${topic.id}">
+                <input type="hidden" name="topicId" value="${article.id}">
                 <input type="hidden" name="replyUserId" value="${user.id}">
                 <textarea class="form-control" rows="3" name="content" required="required"></textarea><br/>
             <input type="submit" class="btn btn-default btn-sm" value="回复">

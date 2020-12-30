@@ -9,12 +9,12 @@
 <img src="https://raw.githubusercontent.com/withstars/Genesis/master/preview/2.PNG"></br>
 
 ## 说明
-1. 如果使用该项目出现问题，请联系我 withstars@126.com
+1. 如果使用该项目出现问题，请联系我
 2. 如果该项目对您有帮助,请star鼓励我
 
 ## 如何使用
 ```aidl
-$ git clone https://github.com/withstars/Genesis
+$ git clone xxx
 
 $ cd Genesis
 
